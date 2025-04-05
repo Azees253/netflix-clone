@@ -54,14 +54,4 @@ const logout = () => {
   signOut(auth);
 };
 
-const forgot = async (email) => {
-  try {
-    await sendPasswordResetEmail(auth, email);
-    toast.success("Password reset email sent!");
-  } catch (error) {
-    console.log(error);
-    toast.error(error.code.split("/")[1].split("-").join(" "));
-  }
-};
-
-export { auth, db, signUp, login, logout, forgot };
+export { auth, db, signUp, login, logout };

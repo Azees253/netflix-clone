@@ -76,7 +76,6 @@ const Login = () => {
                   Sign Up Now
                 </span>
               </p>
-              <span onClick={() => forgot()}>Forgotpassword</span>
             </>
           ) : (
             <p>
