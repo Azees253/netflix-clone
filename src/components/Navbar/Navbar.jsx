@@ -19,7 +19,10 @@ const Navbar = () => {
   return (
     <div ref={navRef} className="navbar">
       <div className="navbar-left">
-        <img src={logo} alt="" />
+        <img
+          src="https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg"
+          alt=""
+        />
         <ul>
           <li>Home</li>
           <li>TV Shows</li>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import logo from "../../assets/logo.png";
-import { login, signUp } from "../../firebase";
+import { forgot, login, signUp } from "../../firebase";
 
 const Login = () => {
   const [signState, setSignState] = useState("Sign In");
@@ -21,7 +21,11 @@ const Login = () => {
 
   return (
     <div className="login">
-      <img src={logo} alt="" className="login-logo" />
+      <img
+        src="https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg"
+        alt=""
+        className="login-logo"
+      />
       <div className="login-form">
         <h1>{signState}</h1>
         <form>
@@ -72,6 +76,7 @@ const Login = () => {
                   Sign Up Now
                 </span>
               </p>
+              <span onClick={() => forgot()}>Forgotpassword</span>
             </>
           ) : (
             <p>
